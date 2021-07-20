@@ -71,7 +71,7 @@
         >
             <a-assets>
                 <a-asset-item
-                    id="animated-asset"
+                    id="leon"
 		    gltf-model
                     src="assets/asset.glb"
                 ></a-asset-item>
@@ -101,7 +101,7 @@
 		    rotation="0 0 0"	  
                     scale="0.3992463795099601 0.3992463795099601 0.3992463795099601"
                     animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
+                    gltf-model="#leon"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
@@ -113,7 +113,7 @@
         
      		    document.getElementById("btn1").addEventListener("click", (e)=>{
                     var el = document.querySelector('#bowser-model');
-                    el.setAttribute("obj-model",  "src", "assets/LeonCortes_w.obj");
+                    el.setAttribute("obj-model",  "src", "#leon_w");
                     el.setAttribute("scale",'0.3992463795099601 0.3992463795099601 0.3992463795099601');
 		    el.setAtributte("rotation",'0 -180 0');
 		    el.setAtributte("position",'0 0 0');
@@ -123,7 +123,7 @@
 		      
 		    document.getElementById("btn2").addEventListener("click", (e)=>{
                     var el = document.querySelector('#bowser-model');
-                    el.setAttribute("gltf-model", "src", "assets/asset.glb")
+                    el.setAttribute("gltf-model", "src", "#leon")
                     el.setAttribute("scale",'0.3992463795099601 0.3992463795099601 0.3992463795099601');
 		    el.setAtributte("rotation",'0 0 0');
 		    el.setAtributte("position",'0 0 0');

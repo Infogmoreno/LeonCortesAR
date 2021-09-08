@@ -47,7 +47,6 @@
     <div
       style="position: fixed; bottom: 20px; width:100%; text-align: center; z-index: 1;"
     >
-      <button class="button" id="btn1">Rejilla</button>
       <button class="button" id="btn2">Sólido</button>
       <button class="button" id="btn3">Ficha</button>
     </div>
@@ -66,12 +65,7 @@
         <a-asset-item
           id="LeonCortes"
           gltf-model
-          src="assets/LeonCortes.glb"
-        ></a-asset-item>
-        <a-asset-item
-          id="LeonWire"
-          gltf-model
-          src="assets/LeonCortes_wireframe.glb"
+          src="assets/LeonCortesOptim.glb"
         ></a-asset-item>
         <a-asset-item
           id="FichaTecnica"
@@ -129,28 +123,7 @@
     </a-scene>
 
     <script>
-     document.getElementById("btn1").addEventListener("click", e => {
-        var el = document.querySelector("#Leon");
-        el.setAttribute("visible", false);
-        el.setAttribute("scale", "0.5 0.5 0.5");
-        el.parentNode.removeChild("el");
-        
-      })
-         document.getElementById("btn1").addEventListener("click", e => {
-        var el = document.querySelector("#LeonW");
-        var entityEl = document.createElement(entityEl);   
-        el.setAttribute("visible", true);
-        el.setAttribute("scale", "0.5 0.5 0.5");
-        entityEl.parentNode.addChild(entityEl);
-        
-      })
-       document.getElementById("btn1").addEventListener("click", e => {
-        var el = document.querySelector("#FichaT");
-        el.setAttribute("visible", false);
-        el.setAttribute("scale", "0.5 0.5 0.5");
-        el.parentNode.removeChild("el");  
-        
-      })
+
       
       document.getElementById("btn2").addEventListener("click", e => {
         var el = document.querySelector("#Leon");
@@ -158,17 +131,9 @@
         el.setAttribute("visible", true);
         el.setAttribute("scale", "0.5 0.5 0.5");
         entityEl.parentNode.addChild(entityEl);
-        
-        
-        
+       
       })
-         document.getElementById("btn2").addEventListener("click", e => {
-        var el = document.querySelector("#LeonW");
-        el.setAttribute("visible", false);
-        el.setAttribute("scale", "0.5 0.5 0.5");
-        el.parentNode.removeChild("el");
         
-      })
        document.getElementById("btn2").addEventListener("click", e => {
         var el = document.querySelector("#FichaT");
         el.setAttribute("visible", false);
@@ -185,13 +150,7 @@
         entityEl.parentNode.addChild(entityEl); 
         
       })
-         document.getElementById("btn3").addEventListener("click", e => {
-        var el = document.querySelector("#LeonW");
-        el.setAttribute("visible", false);
-        el.setAttribute("scale", "0.5 0.5 0.5");
-        el.parentNode.removeChild("el"); 
         
-      })
        document.getElementById("btn3").addEventListener("click", e => {
         var el = document.querySelector("#FichaT");
         var entityEl = document.createElement(entityEl);  
